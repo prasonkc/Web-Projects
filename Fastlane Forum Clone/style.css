@@ -1,0 +1,454 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Uses one media query to hide */
+header .top{
+    max-width: 100vw;
+    height: 35px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 8vw;
+    font-family: ".SFNSText-Regular", BlinkMacSystemFont, "San Francisco", "Roboto", "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Lucida Grande", sans-serif;
+    font-size: 12px;
+    overflow: none;
+}
+
+header .top .right{
+    display: flex;
+    align-items: center;
+    gap: 4vw;
+    padding-right: 5vw;
+}
+
+.icon{
+    width: 15px;
+    filter: invert();
+}
+
+header .top .right span:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* Uses 2 media query to resize */
+header nav{
+    background-color: #162f46;
+    height: 62px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+    color: white;
+    /* overflow-x: scroll; */
+}
+
+
+.left-nav {
+    align-items: center;
+    gap: 2vw;
+    padding-left: 8vw;
+}
+
+nav div{
+     height: 62px;
+     display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.left-nav div:hover{
+    background-color: #31475b;
+    cursor: pointer;
+}
+
+header nav .left-nav{
+    display: flex;
+}
+
+.yellow-background{
+    height: 44px;
+    background-color: #d7a526;
+    border-radius: 3px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 7px;
+    color: black;
+}
+
+nav .right-nav{
+    padding-right: 5vw;
+    display: flex;
+    gap: 2vw;
+}
+
+nav .right-nav span, nav .right-nav div{
+    cursor: pointer;
+}
+
+.yellow-text{
+    color: #ce9f27;
+}
+
+
+header .bottom{
+    height: 40px;
+    background-color: #d5d5d5;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 30px;
+    padding-left: 8vw;
+}
+
+.bottom-icons{
+    width: 15px;
+}
+
+header .bottom div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+main{
+    max-width: 90vw;
+    margin: auto;
+    border-left: 1px solid #edf0f5;
+    border-right: 1px solid #edf0f5;
+}
+
+main .main-card{
+    max-width: 84vw;
+    margin: 2vh auto;
+    background-color: #162f46;
+    color: white;   
+    text-align: center;
+    padding: 30px;
+    overflow: hidden;
+}
+
+
+.visitorA{
+    background-color: #ce9f27;
+    width: 43%;
+    border-radius: 7px;
+    margin: 3px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.main-card h1{
+    margin: 15px;
+    font-size: 37.5px;
+}
+
+.main-card > span{
+    margin: 30px 15px;
+    font-size: 18px;
+}
+
+.main-buttons{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 40px;
+}
+
+.green-btn {
+	width: 196px;
+    color: white;
+    background-color: #00bf63;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.02rem;
+}
+
+.main-card p{
+    text-align: center;
+    font-size: 12px;
+}
+
+.posts .filters{
+    width: 100%;
+    padding: 17px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.line{
+    width: 97.7%;
+    background-color: black;
+    height: 1px;
+    margin: auto;
+}
+
+.posts .filters span {
+    margin-right: 10px;
+    padding: 11px;
+	background-color: black;
+	color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.posts .filters span:first-child{
+    background-color: #ce9f27;
+    color: black;
+}
+
+.circle{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 10px;
+    display: inline-flex;
+    margin-right: 40px;
+}
+
+.container{
+    overflow-y: scroll;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.container .preview{
+    min-width: 532px;
+    display: grid;
+    grid-template-columns: 20px 30px 100px 4fr 70px 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    color: #42516d;
+    padding: 0 10px;
+    cursor: default;
+    overflow: auto;
+}
+
+.container .preview:hover{
+    background-color: #f5f5f5;
+  
+}
+
+.container .preview:first-child{
+    background-color: #edeed4;
+
+}
+
+.container .preview .keyword{
+    height: 23px;
+    width: 90px;
+    background-color: #ebeded;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.container .preview .pfp
+{
+    background-color: rebeccapurple;
+    height: 20px;
+    width: 20px;
+}
+
+.main-end{
+    display: grid;
+    grid-template-columns: 4fr 0.9fr;
+    grid-template-rows: 1fr 0.9fr 1fr;
+    justify-content: center;
+    align-items: center;
+    column-gap: 2%;
+}
+
+.top-posts{
+    width: 90%;
+    height: 200px;
+    background-color: hotpink;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+}
+
+.latest-activity{
+    width: 90%;
+    height: 200px;
+    background-color: aquamarine;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: flex-start;
+}
+
+.new-members{
+    width: 90%;
+    height: 200px;
+    background-color: bisque;
+    justify-self: center;
+    align-self: center;
+}
+
+.post-topic{
+    width: 90%;
+    height: 200px;
+    background-color: black;
+    justify-self: center;
+    align-self: flex-start;
+}
+
+.insiders{
+    width: 90%;
+    height: 300px;
+    background-color: greenyellow;
+    justify-self: center;
+    align-self: flex-start;
+    grid-column: 2/3;
+}
+
+.ending{
+    margin-top: 2em;
+    /* height: 30vh; */
+    max-width: 100%;
+    background-color: #162f46;
+    display: flex;
+    padding: 4vw;
+    column-gap: 5vw;
+    color: white;
+}
+
+.ending-first{
+    width: 30%;
+    height: 100%;
+}
+
+.ending-first > p{
+    margin-top: 20px;
+}
+
+.ending-first > div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 50%;
+}
+
+.yellow-heading{
+    color: #d7a526;
+}
+
+.ending-first h1{
+    margin-top: 30px;
+}
+
+
+.ending-second h1{
+    margin-top: 2px;
+}
+
+.ending-second ul{
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.ending-second ul li{
+    margin: 2px;
+}
+
+
+.ending-second ul li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.ending-third{
+    width: 20%;
+}
+
+.ending-third p{
+    margin-top: 15px;
+}
+
+.ending-third img {
+	width: 300px;
+    margin-top: 20px;
+}
+
+.ending-third h3{
+    margin-top: 10px;
+}
+
+.ending-third p{
+    font-size: 13px;
+}
+.register{
+    background-color: black;
+    color: white;
+    border: none;
+    height: 44px;
+    margin-bottom: 20px;
+}
+
+footer{
+    width: 100%;
+    background-color: #23345b;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-nav{
+    margin: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav a{
+    color: white;
+}
+
+@media screen and (max-width:1016px) {
+    header .top{
+        display: none;
+    }
+
+    .ending{
+        flex-wrap: wrap;
+    }
+
+    footer{
+        flex-wrap: wrap;
+    }
+
+    .footer-nav{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:943px) {
+   main{
+    font-size: 0.6rem;
+   }
+   .filters .circle{
+    display: none;
+   }
+   header nav .left-nav{
+    display: none;
+   }
+   header nav .right-nav{
+    justify-content: flex-end;
+   }
+   .posts{
+    width: 100%;
+   }
+}
+
